@@ -4,8 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <button id="event">Нажми меня</button>
+
+    <h1 id="head-1">Hello, summer!</h1>
+
+    <ol id="fruits" class="fruits">
+      <li class="fruit-1">Банан</li>
+      <li class="fruit-2">Ананас</li>
+      <li class="fruit-3">Апельсин</li>
+    </ol>
+
+
+    <ul id="drinks">
+      <li>Чай</li>
+      <li>Молоко</li>
+      <li>Сок</li>
+    </ul>
+
+
+    <div id="users">
+      <div class="user user-1 hidden">
+        <h3>Иван Иванов</h3>
+        <p>Возраст: 11</p>
+      </div>
+      <div class="user user-2">
+        <h3>Инна Иванова</h3>
+        <p>Возраст: 22</p>
+      </div>
+      <div class="user user-3">
+        <h3>Светлана Сидорова</h3>
+        <p>Возраст: 44</p>
+      </div>
+    </div>
+
+    <div id="users-2"></div>
+
+    <form id="enter-form">
+      <div class="form-el">
+        <input type="text" name="fName" id="fName" placeholder="Введите имя">
+        <span></span>
+      </div>
+      <div class="form-el">
+        <input type="text" name="lName" id="lName" placeholder="Введите фамилию">
+        <span></span>
+      </div>
+      <div class="form-el">
+        <input type="submit" value="Войти">
+      </div>
+    </form>
+
+    <div class="items" id="items">
+      <div class="item item-1">
+        <img src="https://images.unsplash.com/photo-1605507139485-d0a835ec559d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG9vdGglMjBwYXN0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="" id="item-image-1">
+        <h3>Зубная паста</h3>
+        <button>В корзину</button>
+      </div>
+      <div class="item item-2">
+        <img src="" alt="" id="item-image-2">
+        <h3>Зубная щетка</h3>
+        <button>В корзину</button>
+      </div>
+    </div>
+    
+    <a href="https://developer.mozilla.org/ru/" id="doc-ref" target="_blank">Ссылка на документацию</a>
+    <hr>
+
+
+
     <script src="script.js"></script>
   </body>
 </html>
