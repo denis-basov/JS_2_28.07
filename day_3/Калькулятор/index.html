@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <h1>splitter</h1>
+    <main class="calc-main">
+      <section class="data">
+        <form class="data-form">
+          <div class="data-bill">
+            <label for="bill-input">Bill</label>
+            <input type="number" id="bill-input" min="0" value="0" />
+          </div>
+          <div class="data-tip">
+            <label>Select Tip %</label>
+            <div class="tip-btns">
+              <input type="button" class="tip-btn" id="tip-5" value="5%" />
+              <input type="button" class="tip-btn" id="tip-10" value="10%" />
+              <input type="button" class="tip-btn" id="tip-15" value="15%" />
+              <input type="button" class="tip-btn" id="tip-20" value="20%" />
+              <input type="button" class="tip-btn" id="tip-50" value="50%" />
+              <input type="button" class="tip-btn" id="tip-custom" value="custom" />
+            </div>
+          </div>
+          <div class="data-peoples">
+            <label for="peoples-input">Number of People</label>
+            <input type="number" id="peoples-input" min="0" value="0" />
+          </div>
+        </form>
+      </section>
+
+      <section class="output">
+        <div class="output-data">
+          <div class="output-tip">
+            <div class="tip-label">
+              <h2>Tip Amount</h2>
+              <p>/ person</p>
+            </div>
+            <span>$0</span>
+          </div>
+          <div class="output-total">
+            <div class="total-label">
+              <h2>Total</h2>
+              <p>/ person</p>
+            </div>
+            <span>$0</span>
+          </div>
+        </div>
+
+        <div class="output-reset">
+          <button class="reset-btn">Reset</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

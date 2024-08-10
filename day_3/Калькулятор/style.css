@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* text-align: center; */
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    padding: 100px;
+}
+
+body h1 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+}
+
+
+
+.calc-main {
+    max-width: 920px;
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* часть для ввода данных */
+.calc-main .data {
+    padding: 10px;
+}
+
+.calc-main .data .data-bill,
+.calc-main .data .data-tip,
+.calc-main .data .data-peoples {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.calc-main .data .data-bill label,
+.calc-main .data .data-peoples label {
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 5px;
+}
+
+.calc-main .data .data-bill input,
+.calc-main .data .data-peoples input {
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 24px;
+    outline: none;
+    border: 1px solid transparent;
+
+}
+
+.calc-main .data .data-bill input::placeholder,
+.calc-main .data .data-peoples input::placeholder {
+    color: red;
+}
+
+.calc-main .data .data-tip label {
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 5px;
+}
+
+.calc-main .data .data-tip .tip-btns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.calc-main .data .data-tip .tip-btns input {
+    font-weight: 700;
+    padding: 10px;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    font-size: 20px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.calc-main .data .data-tip .tip-btns input:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+
+/* часть для вывода данных */
+.calc-main .output {
+    padding: 40px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calc-main .output .output-tip,
+.calc-main .output .output-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 50px;
+}
+
+.output .output-tip .tip-label h2,
+.output .output-total .total-label h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.output .output-tip .tip-label p,
+.output .output-total .total-label p {
+    color: hsl(184, 14%, 56%);
+}
+
+.output .output-tip span,
+.output .output-total span {
+    font-size: 36px;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+}
+
+.output .output-reset .reset-btn {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+
+.output .output-reset .reset-btn:hover {
+    background-color: hsl(185, 41%, 84%);
+}
