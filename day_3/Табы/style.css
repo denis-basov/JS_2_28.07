@@ -372,6 +372,11 @@ h4 {
   fill: var(--color-tertiary);
 }
 
+.operations__icon img{
+  width: 100%;
+  border-radius: 50%;
+}
+
 /* SLIDER */
 .slider {
   max-width: 100rem;
