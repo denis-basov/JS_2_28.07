@@ -1,0 +1,28 @@
+.country-list{
+    max-width: 1400px;
+    background-color: aliceblue;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 7px;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.country-list .country{
+    background-color: rgb(200, 213, 225);
+    padding: 15px;
+    border-radius: 7px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.country-list .country:hover{
+    background-color: rgb(153, 171, 187);
+}
+
+.country-list .country img{
+    width: 100%;
+}
